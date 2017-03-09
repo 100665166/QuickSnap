@@ -130,6 +130,8 @@ namespace CardGames.GameLogic
 		/// The player hit the top of the cards "snap"! :)
 		/// Check if the top two cards' ranks match.
 		/// </summary>
+		
+		/* OLD CODE
 		public void PlayerHit (int player)
 		{
 			//TODO: consider deducting score for miss hits???
@@ -143,6 +145,23 @@ namespace CardGames.GameLogic
 
 			// stop the game...
 			_started = false;
+		}*/
+		
+		public void PlayerHit (int player)
+		{
+		 	//TODO: consider deducting score for miss hits???
+		 	if ( player >= 0 && player < _score.Length && // …
+				IsStarted && // …
+		 		_topCards[0] != null && _topCards[0].Rank == _topCards [1].Rank) // …
+		 	{
+		 		_score[player]++;
+		 	}
+		 	else if ( player >= 0 && player < _score.Length)
+		 	{
+		 		_score[player]--;
+		 	}
+		 	// stop the game...
+		 	_started = false;
 		}
 	
 		#region Snap Game Unit Tests
