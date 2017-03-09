@@ -118,7 +118,7 @@ namespace CardGames.GameLogic
  			{
 				_gameTimer.Reset ();
  				FlipNextCard ();
-			 }
+			}
 		}
 
 		/// <summary>
