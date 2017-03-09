@@ -18,7 +18,7 @@ namespace CardGames
 		/// </summary>
 		/// <param name="myGame">The game object to update in response to events.</param>
 	    
-		/* OLD CODE
+		/* OLD CODE */
 		private static void HandleUserInput(Snap myGame)
 		{
 			//Fetch the next batch of UI interaction
@@ -28,9 +28,9 @@ namespace CardGames
 			{
 				myGame.FlipNextCard ();
 			}
-		}*/
+		}
 	    
-		private static void HandleUserInput(Snap myGame)
+		/*private static void HandleUserInput(Snap myGame)
 		{
 		 	//Fetch the next batch of UI interaction
 		 	SwinGame.ProcessEvents();
@@ -53,7 +53,7 @@ namespace CardGames
 		 			myGame.PlayerHit (1);
 		 		}
 		 	}
-		}
+		}*/
 
 		/// <summary>
 		/// Draws the game to the Window.
