@@ -131,7 +131,7 @@ namespace CardGames.GameLogic
 		/// Check if the top two cards' ranks match.
 		/// </summary>
 		
-		/* OLD CODE
+		/* OLD CODE*/
 		public void PlayerHit (int player)
 		{
 			//TODO: consider deducting score for miss hits???
@@ -145,9 +145,9 @@ namespace CardGames.GameLogic
 
 			// stop the game...
 			_started = false;
-		}*/
+		}
 		
-		public void PlayerHit (int player)
+		/*public void PlayerHit (int player)
 		{
 		 	//TODO: consider deducting score for miss hits???
 		 	if ( player >= 0 && player < _score.Length && 
@@ -162,7 +162,7 @@ namespace CardGames.GameLogic
 		 	}
 		 	// stop the game...
 		 	_started = false;
-		}
+		}*/
 	
 		#region Snap Game Unit Tests
 		#if DEBUG
